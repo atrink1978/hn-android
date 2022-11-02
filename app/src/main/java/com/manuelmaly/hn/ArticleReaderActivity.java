@@ -42,9 +42,9 @@ public class ArticleReaderActivity extends AppCompatActivity {
   public static final String EXTRA_HNPOST = "HNPOST";
   public static final String EXTRA_HTMLPROVIDER_OVERRIDE = "HTMLPROVIDER_OVERRIDE";
 
-  private static final String HTMLPROVIDER_PREFIX_VIEWTEXT = "http://viewtext.org/article?url=";
-  private static final String HTMLPROVIDER_PREFIX_GOOGLE = "http://archive.is/newest/";
-  private static final String HTMLPROVIDER_PREFIX_INSTAPAPER = "http://www.instapaper.com/text?u=";
+  private static final String HTMLPROVIDER_PREFIX_VIEWTEXT = "https://viewtext.org/article?url=";
+  private static final String HTMLPROVIDER_PREFIX_GOOGLE = "https://archive.is/newest/";
+  private static final String HTMLPROVIDER_PREFIX_INSTAPAPER = "https://www.instapaper.com/text?u=";
 
   @ViewById(R.id.article_webview)
   WebView mWebView;
