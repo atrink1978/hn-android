@@ -34,23 +34,8 @@ android {
         versionName "1.9.16"
     }
 
-    signingConfigs {
-        def props = new Properties()
-        props.load(new FileInputStream(rootProject.file("release.properties")))
-
-        release {
-            storeFile new File(props.keyStore.toString())
-            storePassword props.keyStorePassword
-            keyAlias props.keyAlias
-            keyPassword props.keyAliasPassword
-        }
-    }
-
     buildTypes {
-        release {
-            minifyEnabled false
-            signingConfig signingConfigs.release
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        debug {
 
             applicationVariants.all { variant ->
                 variant.outputs.each { output ->
@@ -64,9 +49,6 @@ android {
             }
         }
 
-        debug {
-
-        }
     }
     namespace 'com.manuelmaly.hn'
 }
