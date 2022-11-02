@@ -81,9 +81,9 @@ public class ArticleReaderActivity extends AppCompatActivity {
       mWebView.loadUrl( getArticleViewURL( mPost, mHtmlProvider, this ) );
     }
 
-    mWebView.getSettings().setBuiltInZoomControls( true );
-    mWebView.getSettings().setLoadWithOverviewMode( true );
-    mWebView.getSettings().setUseWideViewPort( true );
+    //mWebView.getSettings().setBuiltInZoomControls( false );
+    //mWebView.getSettings().setLoadWithOverviewMode( true );
+    //mWebView.getSettings().setUseWideViewPort( true );
     mWebView.getSettings().setJavaScriptEnabled( true );
     mWebView.setWebViewClient( new HNReaderWebViewClient() );
 
